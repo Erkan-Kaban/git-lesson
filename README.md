@@ -1,4 +1,5 @@
-# GIT & GIT HUB
+# GIT & GIT HUB v1.1
+### 10/08/22
 ## WHAT IS VERSION CONTROL
 - For lots of files with different version
 - For multiple people working at once
@@ -50,9 +51,11 @@ mk dir foo
 #### A folder where all files are stored
 `$ git init`
 - respository as a desk with paper and each paper is one of the files you want to keep track of metaphorically 
-- Only created once! and files aren't touched from then on. If done again we lose all our previous data. <br /> <br />
+- Only created once! and files aren't touched from then on. If done again we lose all our previous data. 
+- To start a repository <br /> <br />
 ### Staging Area
 `$ git add .`
+- git add selects that file, and moves it to the staging are, marking it as the next commit
 - root directory on your device with the source files
 - Metaphorically a box, files you made changes to and put into the box on the desk. Files you want Git to look over. 
 - After adding you wont get any output on terminal
@@ -77,6 +80,21 @@ mk dir foo
 - **origin** - the default name of the connection to the remote repo
 - `git dif` = to see the changes in repository
 - `git commit -am "message"`  = does a .add combined with a commit "-a" = add "=m" = message
+- `git log` = to see the changes, latest commit would be the first one.
+- `git reset HEAD~1` = goes back 1 commit. Before the commit happened or staged. It requires to me added and committed once again. adding `git reset --hard HEAD-1` does a more permanent change
+- The number of HEAD~(number) is the amount of times you want to go back, so if you have 3 commits and you enter (number) as one it will go back one commit.
+- it also resets to that HEAD point **permanently**
+
+
+# Adding Git to GitHub
+
+- select new repository in github
+- fill in the repository, change options, select SSH
+- go back to your local repo
+- `git remote -v` checks if any local repos are connected to github
+- `git remote add origin "link to github"` - to add repository to github only done the first time
+- `git push -u origin master` < connects local to remote through SSH key, master is the branch name
+
 
 
 
