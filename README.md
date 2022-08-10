@@ -22,12 +22,19 @@
 
 # First Repo!
 
-This is a test repo for the git lesson
+## Subheading
+
+This is the first change to this file
+
+a test repo for the git lesson
 
 ```bash
 ls -la
 mk dir foo
 ```
+- one
+- two
+- three
 
 ## GITHUB
 - Web-app owned by microsoft
@@ -68,6 +75,8 @@ mk dir foo
 - **clone** - copy the contents of a remote repo to your local repo and working directory
 - **master**/**main** - the default brach on a repo
 - **origin** - the default name of the connection to the remote repo
+- `git dif` = to see the changes in repository
+- `git commit -am "message"`  = does a .add combined with a commit "-a" = add "=m" = message
 
 
 
