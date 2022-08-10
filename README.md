@@ -42,18 +42,23 @@ mk dir foo
 ### Respository
 #### A folder where all files are stored
 `$ git init`
-- respository as a desk with paper and each paper is one of the files you want to keep track of metaphorically <br /> <br />
-- Only created once! and files aren't touched from then on. If done again we lose all our previous data.
+- respository as a desk with paper and each paper is one of the files you want to keep track of metaphorically 
+- Only created once! and files aren't touched from then on. If done again we lose all our previous data. <br /> <br />
 ### Staging Area
 `$ git add .`
 - root directory on your device with the source files
 - Metaphorically a box, files you made changes to and put into the box on the desk. Files you want Git to look over. 
-- Highlighting the files you want in your repo <br /> <br />
+- After adding you wont get any output on terminal
+- `git status` is used to see the status of the git, whats commited, changes etc.
+- you have to `git add` everytime a change is made
+- **Highlighting** the files you want in your repo <br /> <br />
 ### Commit
+`$ git commit -m "message"` 
 - A Bookmark where all changes to files in the staging area are stored.
 - All the files you have **staged** can be stored or saved
+- just type `git commit` brings up nano ctrl O then ctrl X, needs extra parameters by: `git commit -m "Initial commit"`<br /> <br />
 
-`$ git commit` <br /> <br />
+
 
 ## Some Git Terminology and commands
 
